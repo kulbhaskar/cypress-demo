@@ -1,0 +1,23 @@
+{
+  "name": "cypress-demo",
+  "version": "1.0.0",
+  "description": "test automation using cypress.io",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "test" : "cypress run --headless --browser chrome -s ./cypress/integration/demo/bookstore.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeevananthank/cypress-demo.git"
+  },
+  "author": "Jeeva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeevananthank/cypress-demo/issues"
+  },
+  "homepage": "https://github.com/jeevananthank/cypress-demo#readme",
+  "devDependencies": {
+    "cypress": "^5.3.0"
+  }
+}
