@@ -1,4 +1,4 @@
-# cypress-demo
+# cypress-demo.
 
 Demo project for web test automation using cypress.
 
