@@ -11,6 +11,6 @@ Demo project for web test automation using cypress.
 
   npm install
   
-## Run tests
+## Run Tests
 
   npm run test
