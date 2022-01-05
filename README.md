@@ -7,10 +7,10 @@ Demo project for web test automation using cypress.
 - Install nodejs
 - Install Vscode
 
-## Project setup
+## Project Setup
 
   npm install
   
-## Run tests
+## Run Tests
 
   npm run test
