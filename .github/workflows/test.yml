@@ -1,8 +1,8 @@
 on:
   push:
-    branches: [master]    
+    branches: [main]    
   pull_request:
-    branches: [master]    
+    branches: [main]    
 
   workflow_dispatch:
 
@@ -12,4 +12,4 @@ jobs:
     steps:
       - name: Install altinn-app-frontend dependencies
         run: |
-          echo ${{ github }}
+          echo "$GITHUB_CONTEXT"
