@@ -1,0 +1,6 @@
+jobs:
+  test:
+    steps:
+      - name: Install altinn-app-frontend dependencies
+        run: |
+          echo ${{ github }}
