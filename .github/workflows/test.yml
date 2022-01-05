@@ -12,4 +12,4 @@ jobs:
     steps:
       - name: Install altinn-app-frontend dependencies
         run: |
-          echo "$GITHUB_CONTEXT"
+          echo ${{ toJSON(github) }}
