@@ -10,6 +10,6 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Install altinn-app-frontend dependencies
+      - name: test
         run: |
           echo ${{ toJSON(github) }}
