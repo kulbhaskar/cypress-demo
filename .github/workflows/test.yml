@@ -6,10 +6,17 @@ on:
 
   workflow_dispatch:
 
-jobs:  
-  test:
-    if: github.repository_owner == 'jeevananthank' && github.repository.fork == 'false'
+jobs:
+  job:
     runs-on: ubuntu-latest
+    steps:
+    - name: Show the Github context for the triggered event
+      run: echo "$GITHUB_CONTEXT"
+      env:
+        GITHUB_CONTEXT: ${{ toJson(github) }}
+  test:
+    if: github.repository_owner == 'jeevananthank' && github.event.repository.fork == false
+    runs-on: ubuntu-latest    
     steps:
       - name: test
         run: |
