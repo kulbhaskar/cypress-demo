@@ -15,11 +15,20 @@ jobs:
   #    env:
   #      GITHUB_CONTEXT: ${{ toJson(github) }}
   test:
-    if: |
+    if: |      
      (github.event_name != 'pull_request' && github.event.repository.fork == false) ||
      (github.event_name == 'pull_request' && github.event.pull_request.head.repo.fork == false)
     runs-on: ubuntu-latest    
     steps:
       - name: test
         run: |
-          echo success
+          echo main_repo
+  test_fork:
+    if: |
+     (github.event_name != 'pull_request' && github.event.repository.fork == true) ||
+     (github.event_name == 'pull_request' && github.event.pull_request.head.repo.fork == true)
+    runs-on: ubuntu-latest    
+    steps:
+      - name: test
+        run: |
+          echo fork_repo
