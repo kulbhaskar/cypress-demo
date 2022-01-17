@@ -1,6 +1,6 @@
 # cypress-demo
 
-Demo project for web test automation using cypress.
+Demo project for test automation of web using cypress.
 
 ## Installation
 
